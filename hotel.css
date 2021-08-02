@@ -1,0 +1,513 @@
+
+*{
+    margin: 0;
+     padding: 0;
+     font-family: 'Dancing Script', cursive;
+ }
+ .header{
+    min-height: 100vh;
+    width:100%; 
+    background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(images/hotel1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    border-radius: 10px;
+}
+nav{
+    display: flex;
+    padding: 2% 2%;
+    justify-content: space-between;
+    align-items: stretch;
+}
+nav img{
+    width: 300px;
+}
+.nav links{
+    flex: 1;
+    text-align: right;
+}   
+.nav-links ul li{
+   list-style: none;
+    display: inline-block;
+    padding: 4px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color:white;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+.nav-links ul li::after{
+    content: '';
+    width:0%;
+    height: 4px;
+    background: deeppink;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width:100%;
+}
+ .text-box{
+     width: 70%;
+     color: rgb(20, 255, 20);
+     border-color: black;
+     position: absolute;
+     top: 60%;
+     left: 38%;
+     transform: translate(-50%,-50%);
+     text-align:left;
+ }
+ .text-box h1{
+     font-size: 70px;
+      font-family: 'Dancing Script', cursive;
+     color: white
+ }
+ .text-box p{
+     margin: 10px 0 40px;
+     font-family: 'Indie Flower', cursive;
+     font-size: 20px;
+     color: whitesmoke;
+ }
+ .hero-btn{
+     margin: 380px 0 50px;
+   display: inline-block;
+     text-decoration: none;
+     color: #fff;
+     border: 4px solid #fff; 
+     padding:12px 32px;
+     font-size: 15px;
+     background: transparent;
+     position: relative;
+     cursor: pointer;
+     left: 45%;
+     font-family: 'Indie Flower', cursive;
+ }
+ .hero-btn:hover{
+     border: 4px solid #00ff00;
+     background: #1eff00
+         ;
+     transition: 1s;
+     
+ }
+ 
+ a{
+     color:black;
+     text-decoration: none;
+     font-family: 'Roboto', sans-serif;
+     font-size: 18px;
+ }
+ 
+  a:hover::after{
+     background-color: #FFFFFF;
+  color:#000000;
+  font-weight: bold;
+  border: none;
+  transition: all ease 0.5s;
+  box-shadow: 2px 2px 12px rgba(0,0,0,0.1);    
+ 
+ }
+ 
+ nav .fa{
+     display: none;
+ }
+ 
+ @media(max-width:700px){
+  .text-box h1{
+     font-size: 30px;      
+     } 
+     .nav-links ul li{
+         display: block;
+        } 
+        .nav-links{
+            position: absolute;
+            background: rgb(12, 12, 12);
+            height: 100vh;
+            width: -200px;
+            top; 0;
+            right: -200px;
+            text-align: left;
+            z-index: 2;
+            transition: 1s;
+            
+        }
+        nav .fa{
+            display: block;
+            color:#fff;
+            margin: 10px;
+            font-size: 22px;
+            cursor: pointer;
+        }
+        .nav-links ul{
+            padding: 30px;
+        }
+ }
+  /*------- course-----*/   
+ .course{
+     width: 80%;
+     margin:auto;
+     text-align: center;
+     padding-top:100px;
+ }
+ 
+ h1{
+     color: black;
+     font-size: 40px;
+     font-weight: 600;
+ }
+ p{
+    color: black;
+     font-size: 18px;
+     font-weight: 300;
+     line-height: 22px;
+     padding:10px; 
+     font-family: 'Indie Flower', cursive;
+     
+ }
+ .row{
+     column-gap: 20px;
+     margin-top: 2%;
+     align-content: space-around;
+     display:flex;
+     border-radius: 1000px;
+ }
+ 
+ .course-col{
+   flex-basis:  31%;
+   background: #fff;
+     border-radius: 50px;
+     margin-bottom: 2%;
+     padding: 10px 5px;
+     box-sizing:border-box;
+     transition: 0.5S;
+ }
+ .course-col img{
+    width: 100%;
+    height: 100%;
+     border-radius:300px;
+ }
+ .course-col h3{
+     color: black; 
+     text-align:center;
+     font-weight: 600;
+     margin: 10px 0; 
+ }       
+ .course-col:hover {
+     box-shadow: 0 0 20px 10px rgba(5,5,5,2.5);
+     
+ }
+ @media(max-width: 700px){
+     .row{
+         flex-direction: column;
+     }
+ }
+ /*----------pricing---------*/
+ .pricing{
+    background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(images/hotel1.jpg);
+     width; 100%;
+     background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+     text-align: center;
+     padding: 30px 0;
+     margin-top: 5%;
+ }
+ 
+ .pricing h1{
+     color: #fff;
+     font-weight: 600;
+ }
+ .pricing h3{
+     font-size: 20px;
+     font-weight: 600;
+     color: #FFFFFF;
+ }
+ 
+ .pricing p{
+    color: #fff;
+    font-weight: 600;
+}
+ 
+ 
+ /*----------testimonials--------*/
+ .testimonials{
+     width: 80%;
+     margin: auto;
+     text-align: center;
+     padding-top: 100px;
+     text-align: center;
+ }
+ .testimonial-col{
+   flex-basis: 44%;
+   border-radius: 10px;
+   margin-bottom: 5%;
+  text-align: left;
+  background: #fff3f3;
+     padding: 25px;
+     cursor: pointer;
+     display: flex;
+ }     
+ .testimonial-col img{
+     height: 80px;
+     margin-left: 10px;
+     margin-right: 40px;
+     border-radius: 90%;    
+ }      
+ .testimonial-col p{
+     padding: 0;
+ }       
+ .testimonial-col h3{
+     margin-top: 15px;
+     text-align: left;
+ }       
+ .testimonial-col .fa{
+     color: #fd0511;
+ }
+ @media(max-width: 700px){
+     .testmonial-col img{
+         margin-left: 0px;
+         margin-right: 15px;
+     }
+ }
+         
+ /*--------call to action------*/
+ 
+ .cta{
+     margin: 100px auto;
+     width: 80%;
+     background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(images/hotel1.jpg);
+     background-size: cover;
+     background-position: center;
+     background-attachment: fixed;
+     text-align: center;
+     padding: 100px 0;
+ }
+ .cta h1{
+     color: #fff;
+     margin-bottom: 40px;
+     padding: 0;
+ }
+ .contact-btn{
+    display: inline-block;
+     text-decoration: none;
+     color:#fff;
+     border: 1px solid #fff;
+     padding: 12px 34px;
+     font-size: 13px;
+     background: transparent;
+     position: relative;
+     cursor: pointer;
+ }
+ .contact-btn:hover{
+     border: 4px solid #f44336;
+     background: #f44336;
+     transition: 1s;
+ }        
+ /*-------footer-------*/        
+         
+ .footer{
+     background-color: #575757;
+     width; 100%;
+     text-align: center;
+     padding: 30px 0;
+ } 
+ .footer h1{
+     margin-bottom: 10px;
+     margin-top: 20px;
+     font-weight:900;
+     font-size: 28px;
+ }
+ .icon .fa{ 
+  color: #33CCFF;
+  margin: 0 13px;
+ cursor: pointer;
+ padding: 18px 0;
+ }
+ .fa-heart-o{
+     color:#33CCFF;
+ }
+         
+ /*------------photography--------*/
+ 
+ .photo{
+     margin: 100px auto;
+     width: 100%;
+     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/hotel1.jpg);
+     background-position: center;
+     background-size: cover;
+     border-radius: 10px;
+     text-align: center;
+     padding: 200px 0;
+ }
+ .photo h1{
+     color: #fff;
+     margin-bottom: 40px;
+     padding: 0;
+ }
+ .photo p{
+     color:#fff;
+ }
+       
+    
+ @media(max-width: 700px)
+     .photo{
+         flex-direction: column;
+ }
+ 
+ /*----------photos--------*/
+ .album{
+     width: 80%;
+     margin:auto;
+     text-align: center;
+     padding-top:100px;
+ }
+ 
+ .ow{
+     column-gap: 20px;
+     margin-top: 2%;
+     align-content: space-around;
+     display:flex;
+ }
+ 
+ .album-col{
+   flex-basis:  31%;
+   background:  #fff;
+     border-radius: 50px;
+     padding: 10px 5px;
+     box-sizing:border-box;
+     transition: 0.5S;
+ }
+ .album-col img{
+    width: 100%;
+     border-radius: 300px;
+ }
+ h3{
+     color: black; 
+     text-align: center;
+     font-weight: 600;
+     margin: 10px 0;
+ }       
+ .album-col:hover {
+     box-shadow: 0 0 20px 10px rgba(5,5,5,2.5);
+     
+ }
+ @media(max-width: 700px){
+     .ow{
+         flex-direction: column;
+     }
+ }
+ 
+
+ .newsletter{
+    padding:20px;
+    background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)), url(images/hotel1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+  }
+  
+  .newsletter h1{
+    font-size: 40px;
+    color:#fff;
+    text-shadow: 0 .3rem .5rem #000;
+  }
+  
+  .newsletter p{
+    font-size: 25px;
+    color:#eee;
+    padding:10px 150px;
+  }
+  
+  .newsletter form input{
+    outline:none;
+    border:none;
+    height:50px;
+  }
+  
+  .newsletter form input[type="email"]{
+    width:30%;
+    padding:0 10px;
+    color:#fff;
+    background:rgba(255,255,255,.2);
+    font-size: 20px;
+  }
+  
+  .newsletter form input[type="email"]::placeholder{
+    color:#ccc;
+  }
+  
+  .newsletter form input[type="submit"]{
+    width:200px;
+    color:#fff;
+    background:#0098a1;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: -1.1rem;
+    transition: .2s;
+  }
+  
+  .newsletter form input[type="submit"]:hover{
+    border:.20px solid #fff;
+    color:#fff;
+    background:none;  
+  }
+  
+  .footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px;
+    background:#222;
+  }
+  
+  .footer .credit{
+    font-size: 20px;
+    color:#eee;
+  }
+  
+  .footer .credit span{
+    color:#0098a1;
+  }
+  
+  .footer .icons a{
+    font-size: 20px;
+    margin:0 .10px;
+    height:35px;
+    width:35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 50%;
+    color:#fff;
+    border:.2rem solid #fff;
+    transition: .2s linear;
+  }
+  .footer .icons a:hover{
+    background:#0098a1;
+  }
+
+
+  @media (max-width:768px){
+
+
+    .newsletter p{
+      padding:1rem 0;
+    }
+  
+    .newsletter form input[type="email"]{
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  
+    .footer{
+      flex-flow: column;
+    }
+  
+    .footer .credit{
+      text-align: center;
+      padding-bottom: 3rem;
+    }
+  
+  }

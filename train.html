@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Train Booking</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.banner{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/flight.jpg") center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding-bottom: 20px;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: 520px 520px;
+}
+.card-img{
+    background: url("images/train1.jpg") center/cover no-repeat;
+}
+.banner h2{
+    margin-top: 20px;
+    padding-top;: 40px
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+}
+.card-content{
+    background: #fff;
+    height: 630px;
+}
+.card-content h3{
+    text-align: center;
+    color: #000;
+    padding: 25px 0 10px 0;
+    font-size: 26px;
+    font-weight: 500;
+}
+.form-row{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+ .btn{
+  font-size: 20px;
+  margin-top: 20px;
+  height:40px;
+  width: 490px; 
+  border-radius: 10px;
+  outline: none;
+  border:none;
+  background: #f04123;
+  color:rgb(255, 255, 255);
+  cursor: pointer;
+  transition: .2s linear;
+}
+ .btn:hover{
+  background: none;
+  border:.2rem solid #f04123;
+  color:#f04123;
+}
+
+form select, form input{
+    display: block;
+    width: 100%;
+    margin: 15px 12px;
+    padding: 5px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #eee;
+    font-weight: 300;
+}
+form input[type = text], form input[type = number], form input::placeholder, select{
+    color: #000;
+}
+form input[type = submit]{
+    color: #fff;
+    background: #f04123;
+    padding: 12px 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+form input[type = submit]:hover{
+    opacity: 0.9;
+}
+@media(max-width: 992px){
+    .card-container{
+        grid-template-columns: 100%;
+        width: 100vw;
+    }
+    .card-img{
+        height: 330px;
+    }
+}
+</style>    </head>
+    <body>
+        
+        <section class = "banner">
+            <h2>BOOK YOUR TRAIN NOW</h2>
+            <div class = "card-container">
+                <div class = "card-img">
+                    <!-- image here -->
+                </div>
+
+                <div class = "card-content">
+                    <h3>Booking</h3>
+                    <form>
+                         <div class = "form-row">
+                            <input type = "text" placeholder="Full Name">
+                            <input type = "text" placeholder="Phone Number">
+                        </div>
+
+                        <div class = "form-row">
+                            <input type = "email" placeholder="Email">
+                            <input type = "date" placeholder=" Arrival Date">
+                        </div>
+
+                        <div class = "form-row">
+                            <select name = "flights">
+                                <option value = "select">Select your Train</option>
+                                <option value = "goair">Rajdhani Express</option>
+                                <option value = "indigo">Shatapdi Express</option>
+                                <option value = "vistara">Garib Rath Express</option>
+                                <option value = "airindia">Passenger</option>
+                                <option value = "spicejet">SuperFast Express</option>
+                            </select>
+                            <select name = "booking">
+                                <option value = "select">Select your package</option>
+                                <option value = "solo">Sleeper class</option>
+                                <option value = "family">Non-Sleeper class</option>
+                                <option value = "bussines">AC class</option>
+                                <option value = "honeymoon">Non-AC Class</option>
+                                <option value = "others">Others</option>
+                            </select>
+                        </div>
+                        <div class="form-row">
+                        <input type = "number" placeholder="How Many Persons?" min = "1">
+                        <input type="text" placeholder="Discoun coupon code">
+                        </div>
+                        <div class = "form-row">
+                            <input type = "text" placeholder="From">
+                            <input type = "text" placeholder="To">
+                        </div>
+                       
+                        <a href="payment.html"><button class="btn">Submit</button></a>                        
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+    </body>
+</html>

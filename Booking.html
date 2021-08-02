@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Reservation Form</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        
+        <section class = "banner">
+            <h2>BOOK YOUR ROOM NOW</h2>
+            <div class = "card-container">
+                <div class = "card-img">
+                    <!-- image here -->
+                </div>
+
+                <div class = "card-content">
+                    <h3>Booking</h3>
+                    <form>
+                                             <div class = "form-row">
+                            <input type = "text" placeholder="Full Name">
+                            <input type = "text" placeholder="Phone Number">
+                        </div>
+
+                        <div class = "form-row">
+                            <input type = "email" placeholder="Email">
+                            <input type = "date" placeholder="Date">
+                        </div>
+
+                        <div class = "form-row">
+                            <input type = "number" placeholder="How Many Persons?" min = "1">
+                            <select name = "booking">
+                                <option value = "day-select">Select Options</option>
+                                <option value = "family">Family</option>
+                                <option value = "bussines">Bussines</option>
+                                <option value = "single">Single</option>
+                                <option value = "couple">Couple</option>
+                                <option value = "others">Others</option>
+                            </select>
+                        </div>
+                        
+                        <div class = "form-row">
+                            <input type = "submit" value = "BOOK TABLE">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+    </body>
+</html>

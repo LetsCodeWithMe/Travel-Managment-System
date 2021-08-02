@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat",sans-serif;
+}
+.services{
+  background: #f1f1f1;
+  text-align: center;
+}
+.services h1{
+  display: inline-block;
+  text-transform: uppercase;
+  border-bottom: 4px solid #3498db;
+  font-size: 20px;
+  padding-bottom: 10px;
+  margin-top: 40px;
+}
+.cen{
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 20px;
+}
+.service{
+  display: inline-block;
+  width: calc(100% / 3);
+  margin: 0 -2px;
+  padding: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.service:hover{
+  background: #ddd;
+}
+
+.service h2{
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 0;
+}
+.service a{
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 0;
+  color: black;;
+}
+.service p{
+  color: rgb(3, 3, 3);
+  font-size: 15px;
+  font-weight: 500;
+}
+@media screen and (max-width: 800px) {
+  .service{
+    width: 50%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .service{
+    width: 100%;
+  }
+}
+
+
+    </style>
+  </head>
+  <body>
+    <div class="services">
+      <h1>Booking Section</h1>
+      <div class="cen">
+        <div class="service">
+            <img src="images/plane.png">
+          <h2><a href="travelbooking.html">Flight Booking</a></h2>
+          <p>Search Lowest Flight Ticket Booking. Look Up Results On Info.com. Search Lowest Flight Ticket Booking. Find Results On Info.com. Search Info Today. Find More Information. Great Tech Resources.</p>
+        </div>
+
+        <div class="service">
+            <img src="images/rail.png">
+         <h2><a href="train.html">Railway Booking</a></h2>
+          <p>RailYatri is one of the leading online IRCTC (Indian Railways Catering and Tourism) train ticket booking platforms. A popular mobile app with Its wide span of railway reservation services. </p>
+        </div>
+
+        
+      </div>
+    </div>
+  </body>
+</html>
